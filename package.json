@@ -1,0 +1,24 @@
+{
+  "name": "express-nodemon-typescript",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "author": "serhiobladestone",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "scripts":{
+    "watch": "tsc -w",
+    "dev":"nodemon --inspect ./dist/index.js",
+    "build": "tsc",
+    "start": "node dist/idex.js"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
